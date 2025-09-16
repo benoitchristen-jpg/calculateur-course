@@ -8,36 +8,511 @@
   <meta name="CocoaVersion" content="2575.7">
   <style type="text/css">
     p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 14.0px}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
     p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #d4d4d4; -webkit-text-stroke: #d4d4d4}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #36c0a0; -webkit-text-stroke: #36c0a0}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Menlo; color: #4f7b3d; -webkit-text-stroke: #4f7b3d}
     span.s1 {font-kerning: none; background-color: #171717}
-    span.s2 {font-kerning: none; color: #cacaca; background-color: #171717; -webkit-text-stroke: 0px #cacaca}
-    span.s3 {font-kerning: none; color: #36c0a0; background-color: #171717; -webkit-text-stroke: 0px #36c0a0}
-    span.s4 {font-kerning: none; color: #c27e65; background-color: #171717; -webkit-text-stroke: 0px #c27e65}
-    span.s5 {font-kerning: none; color: #d4d4d4; background-color: #171717; -webkit-text-stroke: 0px #d4d4d4}
+    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171717; -webkit-text-stroke: 0px #8cd3fe}
+    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171717; -webkit-text-stroke: 0px #6d6d6d}
+    span.s4 {font-kerning: none; color: #cacaca; background-color: #171717; -webkit-text-stroke: 0px #cacaca}
+    span.s5 {font-kerning: none; color: #c27e65; background-color: #171717; -webkit-text-stroke: 0px #c27e65}
     span.s6 {font-kerning: none; color: #4689cc; background-color: #171717; -webkit-text-stroke: 0px #4689cc}
-    span.s7 {font-kerning: none}
+    span.s7 {font-kerning: none; color: #d4d4d4; background-color: #171717; -webkit-text-stroke: 0px #d4d4d4}
+    span.s8 {font-kerning: none}
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">import</span><span class="s2"> </span><span class="s3">React</span><span class="s2"> </span><span class="s1">from</span><span class="s2"> </span><span class="s4">'react'</span><span class="s5">;</span></p>
-<p class="p2"><span class="s6">import</span><span class="s2"> </span><span class="s3">ReactDOM</span><span class="s2"> </span><span class="s6">from</span><span class="s2"> </span><span class="s1">'react-dom/client'</span><span class="s5">;</span></p>
-<p class="p1"><span class="s1">import</span><span class="s2"> </span><span class="s3">App</span><span class="s2"> </span><span class="s1">from</span><span class="s2"> </span><span class="s4">'./App'</span><span class="s5">;</span></p>
-<p class="p3"><span class="s7"></span><br></p>
-<p class="p4"><span class="s6">const</span><span class="s1"> rootElement </span><span class="s5">=</span><span class="s1"> document</span><span class="s5">.</span><span class="s1">getElementById</span><span class="s5">(</span><span class="s4">'root'</span><span class="s5">);</span></p>
-<p class="p4"><span class="s6">if</span><span class="s1"> </span><span class="s5">(!</span><span class="s1">rootElement</span><span class="s5">)</span><span class="s1"> </span><span class="s5">{</span></p>
-<p class="p2"><span class="s2"><span class="Apple-converted-space">  </span></span><span class="s6">throw</span><span class="s2"> </span><span class="s6">new</span><span class="s2"> </span><span class="s3">Error</span><span class="s5">(</span><span class="s1">"Could not find root element to mount to"</span><span class="s5">);</span></p>
-<p class="p5"><span class="s1">}</span></p>
-<p class="p3"><span class="s7"></span><br></p>
-<p class="p4"><span class="s6">const</span><span class="s1"> root </span><span class="s5">=</span><span class="s1"> </span><span class="s3">ReactDOM</span><span class="s5">.</span><span class="s1">createRoot</span><span class="s5">(</span><span class="s1">rootElement</span><span class="s5">);</span></p>
-<p class="p4"><span class="s1">root</span><span class="s5">.</span><span class="s1">render</span><span class="s5">(</span></p>
-<p class="p6"><span class="s2"><span class="Apple-converted-space">  </span></span><span class="s5">&lt;</span><span class="s1">React</span><span class="s5">.</span><span class="s1">StrictMode</span><span class="s5">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s5">&lt;</span><span class="s3">App</span><span class="s1"> /&gt;</span></p>
-<p class="p6"><span class="s2"><span class="Apple-converted-space">  </span></span><span class="s5">&lt;/</span><span class="s1">React</span><span class="s5">.</span><span class="s1">StrictMode</span><span class="s5">&gt;</span></p>
-<p class="p5"><span class="s1">);</span></p>
-<p class="p3"><span class="s7"></span><br></p>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"fr"</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s4"> </span><span class="s3">/&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s4"> </span><span class="s3">/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">Calculateur d'Allure de Course</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"description"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"Une application web pour les coureurs à pied pour calculer la vitesse, l'allure et les temps de course. Entrez votre allure pour voir les prédictions de temps sur différentes distances, ou entrez un temps et une distance pour connaître votre allure et votre vitesse."</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- Tailwind CSS --&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!-- React &amp; Babel for JSX in browser --&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s6">script</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"importmap"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>"imports": {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>"react": "https://esm.sh/react@18.2.0",</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>"react-dom/client": "https://esm.sh/react-dom@18.2.0/client"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">      </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">/* Small style adjustments to match the original dark theme */</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">body</span><span class="s1"> </span><span class="s7">{</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s5">sans-serif</span><span class="s7">;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">}</span></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;</span><span class="s6">body</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"bg-slate-950"</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"root"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s1">&lt;!--<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">      </span>NOTE: This is a standalone application.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">      </span>All necessary components and logic from the .tsx files are bundled into this single script block.</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span>--&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text/babel"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>import React, { useState, useMemo, useRef, useCallback } from 'react';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>import ReactDOM from 'react-dom/client';</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- From types.ts ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const CalculatorMode = {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>Pace: 'Pace',</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>TimeDistance: 'TimeDistance',</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- From constants.ts ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const RACE_DISTANCES = [</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: '1500 m', distanceKm: 1.5 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: '3000 m', distanceKm: 3 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: '5 km', distanceKm: 5 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: '10 km', distanceKm: 10 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: '15 km', distanceKm: 15 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: 'Semi-Marathon', distanceKm: 21.0975 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: '30 km', distanceKm: 30 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>{ name: 'Marathon', distanceKm: 42.195 },</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- From utils/helpers.ts ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const formatTime = (totalSeconds) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>if (isNaN(totalSeconds) || totalSeconds &lt; 0) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return '00:00:00';</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>}</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const hours = Math.floor(totalSeconds / 3600);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const minutes = Math.floor((totalSeconds % 3600) / 60);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const seconds = Math.floor(totalSeconds % 60);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const pad = (num) =&gt; num.toString().padStart(2, '0');</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const formatPace = (paceSecondsPerKm) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>if (isNaN(paceSecondsPerKm) || paceSecondsPerKm &lt;= 0) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return "0'00\"";</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>}</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const minutes = Math.floor(paceSecondsPerKm / 60);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const seconds = Math.round(paceSecondsPerKm % 60);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">          </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return `${minutes}'${seconds.toString().padStart(2, '0')}"`;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const paceToSpeed = (paceSecondsPerKm) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>if (paceSecondsPerKm &lt;= 0) return 0;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return 3600 / paceSecondsPerKm;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const speedToPace = (speedKmh) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>if (speedKmh &lt;= 0) return 0;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return 3600 / speedKmh;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const calculateTime = (paceSecondsPerKm, distanceKm) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return paceSecondsPerKm * distanceKm;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const calculatePace = (totalSeconds, distanceKm) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>if (distanceKm &lt;= 0) return 0;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return totalSeconds / distanceKm;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- From components/icons.tsx ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const RunnerIcon = ({ className }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;circle cx="12" cy="5" r="1" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;path d="M12 22v-6l-4-3-1 7h10l-1-7-4 3z" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;path d="M12 11.5l3.5-2-5.5-3-3 5.5 5 2.5z" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/svg&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const StopwatchIcon = ({ className }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;circle cx="12" cy="13" r="8" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;path d="M12 9v4l2 1" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;path d="M5 3L2 6" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;path d="M22 6l-3-3" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;path d="M12 2v4" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/svg&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const SpeedometerIcon = ({ className }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M12 12l4-4"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;path d="M16 16.5A6.5 6.5 0 0012 12"/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/svg&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const MinusIcon = ({ className }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;line x1="5" y1="12" x2="19" y2="12"&gt;&lt;/line&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/svg&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const PlusIcon = ({ className }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;line x1="12" y1="5" x2="12" y2="19"&gt;&lt;/line&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;line x1="5" y1="12" x2="19" y2="12"&gt;&lt;/line&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/svg&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- From App.tsx ---</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const SliderInput = ({ label, value, onChange, min, max, step, unit, formatValue }) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const sliderRef = useRef(null);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const isDragging = useRef(false);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleValueChange = useCallback((clientX) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (!sliderRef.current) return;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const rect = sliderRef.current.getBoundingClientRect();</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const percentage = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const range = max - min;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const rawValue = min + percentage * range;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const steppedValue = Math.round(rawValue / step) * step;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>onChange(Math.max(min, Math.min(max, steppedValue)));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [min, max, step, onChange]);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleMouseMove = useCallback((e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (isDragging.current) handleValueChange(e.clientX);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [handleValueChange]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleTouchMove = useCallback((e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (isDragging.current) handleValueChange(e.touches[0].clientX);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [handleValueChange]);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleMouseUp = useCallback(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>isDragging.current = false;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.removeEventListener('mousemove', handleMouseMove);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.removeEventListener('mouseup', handleMouseUp);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [handleMouseMove]);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleTouchEnd = useCallback(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>isDragging.current = false;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.removeEventListener('touchmove', handleTouchMove);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.removeEventListener('touchend', handleTouchEnd);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [handleTouchMove]);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleMouseDown = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>isDragging.current = true;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>handleValueChange(e.clientX);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.addEventListener('mousemove', handleMouseMove);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.addEventListener('mouseup', handleMouseUp);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const handleTouchStart = (e) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>isDragging.current = true;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>handleValueChange(e.touches[0].clientX);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.addEventListener('touchmove', handleTouchMove);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>window.addEventListener('touchend', handleTouchEnd);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const percentage = ((value - min) / (max - min)) * 100;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const increment = () =&gt; onChange(Math.min(max, value + step));</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const decrement = () =&gt; onChange(Math.max(min, value - step));</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="flex-1 w-full"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex justify-between items-baseline mb-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;label className="block text-sm font-medium text-slate-400"&gt;{label}&lt;/label&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="text-right"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="text-2xl font-bold text-white tabular-nums"&gt;{formatValue(value)}&lt;/span&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>{unit &amp;&amp; &lt;span className="text-sm text-slate-400 ml-1"&gt;{unit}&lt;/span&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="flex items-center gap-3"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button onClick={decrement} className="p-2 rounded-full bg-slate-700/50 text-slate-300 hover:bg-blue-500 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label={`Diminuer ${label}`}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;MinusIcon className="h-4 w-4" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>ref={sliderRef}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>onMouseDown={handleMouseDown}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>onTouchStart={handleTouchStart}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>className="relative w-full h-2 bg-slate-700/50 rounded-full cursor-pointer touch-none"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>role="slider"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>aria-valuemin={min}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>aria-valuemax={max}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>aria-valuenow={value}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>aria-label={label}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>tabIndex={0}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="absolute h-full rounded-full bg-gradient-to-r from-blue-500 to-green-400" style={{ width: `${percentage}%` }} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-white rounded-full shadow-lg shadow-blue-500/50 ring-2 ring-slate-800" style={{ left: `${percentage}%` }} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button onClick={increment} className="p-2 rounded-full bg-slate-700/50 text-slate-300 hover:bg-blue-500 hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400" aria-label={`Augmenter ${label}`}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;PlusIcon className="h-4 w-4" /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const InputModeToggle = ({ inputType, setInputType }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div className="relative flex w-full max-w-xs mx-auto bg-slate-800 rounded-full p-1 border border-slate-700"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>className={`absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-full bg-gradient-to-r from-blue-500 to-green-400 transition-transform duration-300 ease-in-out`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>style={{ transform: inputType === 'pace' ? 'translateX(0%)' : 'translateX(100%)' }}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onClick={() =&gt; setInputType('pace')} className="relative flex-1 py-2 text-sm font-semibold z-10 transition-colors text-white"&gt;Allure&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onClick={() =&gt; setInputType('speed')} className="relative flex-1 py-2 text-sm font-semibold z-10 transition-colors text-white"&gt;Vitesse&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const ResultCard = ({ icon, label, value }) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="bg-slate-800/50 p-4 rounded-lg flex items-center space-x-4 border border-slate-700"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="p-3 rounded-full bg-gradient-to-br from-blue-500 to-green-400"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{icon}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p className="text-sm text-slate-400"&gt;{label}&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p className="text-2xl font-bold text-white"&gt;{value}&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const PaceCalculator = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [inputType, setInputType] = useState('pace');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [paceInSeconds, setPaceInSeconds] = useState(300); // 5:00/km</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [speed, setSpeed] = useState(12.0);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [customDistance, setCustomDistance] = useState(10.0);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const { paceSecondsPerKm, speedKmh } = useMemo(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>if (inputType === 'pace') {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const calculatedSpeed = paceInSeconds &gt; 0 ? paceToSpeed(paceInSeconds) : 0;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>return { paceSecondsPerKm: paceInSeconds, speedKmh: calculatedSpeed };</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>const calculatedPace = speed &gt; 0 ? speedToPace(speed) : 0;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>return { paceSecondsPerKm: calculatedPace, speedKmh: speed };</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>}, [inputType, paceInSeconds, speed]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">          </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const customTimeSeconds = useMemo(() =&gt; calculateTime(paceSecondsPerKm, customDistance), [paceSecondsPerKm, customDistance]);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="space-y-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3 className="text-lg font-semibold text-white mb-4 text-center"&gt;1. Choisissez votre base de calcul&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;InputModeToggle inputType={inputType} setInputType={setInputType} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="flex flex-col items-center gap-6"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>{inputType === 'pace' ? (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;SliderInput<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>label="Allure"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>value={paceInSeconds}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onChange={setPaceInSeconds}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>min={150} // 2:30/km</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>max={600} // 10:00/km</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>step={1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>formatValue={formatPace}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>unit="/km"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>) : (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;SliderInput</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>label="Vitesse"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>value={speed}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>onChange={setSpeed}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>min={6}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>max={24}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>step={0.1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>formatValue={(s) =&gt; s.toFixed(1)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>unit="km/h"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">              </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{paceSecondsPerKm &gt; 0 &amp;&amp; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="grid grid-cols-1 md:grid-cols-2 gap-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ResultCard icon={&lt;RunnerIcon className="h-6 w-6 text-white"/&gt;} label="Allure" value={`${formatPace(paceSecondsPerKm)} /km`} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;ResultCard icon={&lt;SpeedometerIcon className="h-6 w-6 text-white"/&gt;} label="Vitesse" value={`${speedKmh.toFixed(2)} km/h`} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>)}</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{paceSecondsPerKm &gt; 0 &amp;&amp; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h3 className="text-lg font-semibold text-white mb-3 text-center"&gt;2. Prédictions de temps&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="bg-slate-800/50 rounded-lg overflow-hidden border border-slate-700"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;table className="w-full text-left"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;thead className="bg-slate-900/50"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;tr&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="p-4 text-sm font-semibold text-slate-300"&gt;Distance&lt;/th&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;th className="p-4 text-sm font-semibold text-slate-300 text-right"&gt;Temps estimé&lt;/th&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/thead&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;tbody className="divide-y divide-slate-700/50"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>{RACE_DISTANCES.map((race) =&gt; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;tr key={race.name}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;td className="p-4 text-slate-300"&gt;{race.name}&lt;/td&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;td className="p-4 text-white font-mono text-right"&gt;{formatTime(calculateTime(paceSecondsPerKm, race.distanceKm))}&lt;/td&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>&lt;/tr&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>))}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/tbody&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/table&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>)}</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>{paceSecondsPerKm &gt; 0 &amp;&amp; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h3 className="text-lg font-semibold text-white mb-4 text-center"&gt;3. Calcul pour une distance personnalisée&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="flex flex-col gap-4 items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;SliderInput<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>label="Distance"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>value={customDistance}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>onChange={setCustomDistance}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>min={0.1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>max={120}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>step={0.1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>formatValue={(d) =&gt; d.toFixed(2)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>unit="km"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="w-full bg-slate-800/50 p-4 rounded-lg border border-slate-700 text-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p className="text-sm text-slate-400"&gt;Temps estimé&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p className="text-3xl font-bold text-white font-mono"&gt;{formatTime(customTimeSeconds)}&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const TimeDistanceCalculator = () =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [timeInSeconds, setTimeInSeconds] = useState(45 * 60); // 45:00</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const [distance, setDistance] = useState(10.0);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const { paceSecondsPerKm, speedKmh } = useMemo(() =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>if (timeInSeconds &lt;= 0 || distance &lt;= 0) return { paceSecondsPerKm: 0, speedKmh: 0 };</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const pace = calculatePace(timeInSeconds, distance);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>const speed = paceToSpeed(pace);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>return { paceSecondsPerKm: pace, speedKmh: speed };</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>}, [timeInSeconds, distance]);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="space-y-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 className="text-lg font-semibold text-white mb-4 text-center"&gt;1. Entrez votre temps de course&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex flex-col items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;SliderInput</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>label="Temps"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>value={timeInSeconds}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>onChange={setTimeInSeconds}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>min={1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>max={6 * 3600} // 6 hours</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>step={1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>formatValue={formatTime}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                     </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h3 className="text-lg font-semibold text-white mb-4 text-center"&gt;2. Entrez la distance&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex flex-col items-center"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;SliderInput<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>label="Distance"<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>value={distance}<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>onChange={setDistance}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>min={0.1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>max={120}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>step={0.1}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>formatValue={(d) =&gt; d.toFixed(2)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>unit="km"</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>/&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>{paceSecondsPerKm &gt; 0 &amp;&amp; speedKmh &gt; 0 &amp;&amp; (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                             </span>&lt;h3 className="text-lg font-semibold text-white mb-2 text-center"&gt;3. Vos résultats&lt;/h3&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="grid grid-cols-1 md:grid-cols-2 gap-4"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ResultCard icon={&lt;RunnerIcon className="h-6 w-6 text-white"/&gt;} label="Allure" value={`${formatPace(paceSecondsPerKm)} /km`} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;ResultCard icon={&lt;SpeedometerIcon className="h-6 w-6 text-white"/&gt;} label="Vitesse" value={`${speedKmh.toFixed(2)} /km/h`} /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>function App() {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const [mode, setMode] = useState(CalculatorMode.Pace);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>const TabButton = ({ currentMode, targetMode, setMode, icon, children }) =&gt; {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>const isActive = currentMode === targetMode;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>onClick={() =&gt; setMode(targetMode)}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>className={`relative flex-1 flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold rounded-md transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-950 focus:ring-blue-500 ${</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>isActive</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>? 'text-white'</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>: 'text-slate-400 hover:text-white'</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>}`}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{isActive &amp;&amp; &lt;div className="absolute inset-0 bg-slate-700/50 rounded-md -z-10"&gt;&lt;/div&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{icon}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>{children}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>};</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>return (</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div className="min-h-screen text-white p-4 sm:p-6 lg:p-8"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;div className="max-w-2xl mx-auto"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;header className="text-center mb-10"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 pb-2"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>Calculateur de Course</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/h1&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;p className="mt-2 text-slate-400"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>Estimez votre allure, vitesse et temps de course avec précision.</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/header&gt;</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;main&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="bg-slate-800 p-2 rounded-lg mb-8 flex gap-2 border border-slate-700"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;TabButton currentMode={mode} targetMode={CalculatorMode.Pace} setMode={setMode} icon={&lt;RunnerIcon className="w-5 h-5"/&gt;}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>Depuis Allure/Vitesse</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/TabButton&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;TabButton currentMode={mode} targetMode={CalculatorMode.TimeDistance} setMode={setMode} icon={&lt;StopwatchIcon className="w-5 h-5"/&gt;}&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                          </span>Depuis Temps/Distance</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                      </span>&lt;/TabButton&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;div className="bg-slate-900 p-6 sm:p-8 rounded-xl shadow-2xl shadow-blue-500/10 border border-slate-700"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                     </span>{mode === CalculatorMode.Pace ? &lt;PaceCalculator /&gt; : &lt;TimeDistanceCalculator /&gt;}</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                  </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/main&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;footer className="text-center mt-10 text-slate-600 text-sm"&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Conçu pour les passionnés de course à pied.&lt;/p&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/footer&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">              </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>// --- From index.tsx ---</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const rootElement = document.getElementById('root');</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>if (!rootElement) {</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>throw new Error("Could not find root element to mount to");</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>const root = ReactDOM.createRoot(rootElement);</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>root.render(</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;React.StrictMode&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>&lt;App /&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/React.StrictMode&gt;</span></p>
+<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>);</span></p>
+<p class="p5"><span class="s8"></span><br></p>
+<p class="p1"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
 </body>
 </html>
